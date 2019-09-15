@@ -1,0 +1,27 @@
+h1 {
+    color: azure;
+}
+h2 {
+    color: azure;
+}
+h3 {
+    color: azure;
+}
+
+body{
+    background: #001E2F;
+}
+.p-grid {
+    width: 400px;
+    padding: 0.5rem;
+    
+
+}
+
+.p-col {
+    padding: 1rem;
+    background: gray;
+    color: white;
+    border-radius: 10px;
+    
+}

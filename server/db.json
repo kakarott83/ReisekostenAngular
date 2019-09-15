@@ -1,0 +1,229 @@
+{
+  "reasons": [
+    {
+      "id": 1,
+      "reason": "Workshop"
+    },
+    {
+      "id": 2,
+      "reason": "Vor Ort Betreuung"
+    },
+    {
+      "id": 3,
+      "reason": "Livegang"
+    },
+    {
+      "id": 4,
+      "reason": "Präsentation"
+    }
+  ],
+  "travels": [
+    {
+      "start": "2019-08-13T07:00:48.000Z",
+      "end": "2019-08-15T07:00:48.000Z",
+      "customer": {
+        "id": 1,
+        "name": "BANK-now",
+        "country": "Schweiz",
+        "city": "Horgen",
+        "travelrate": 62,
+        "travelpartrate": 32,
+        "link": "assets/img/bnow.png"
+      },
+      "reason": {
+        "id": 1,
+        "reason": "Workshop"
+      },
+      "id": 2
+    },
+    {
+      "start": "2019-08-19T07:00:54.000Z",
+      "end": "2019-08-28T07:00:54.000Z",
+      "customer": {
+        "id": 2,
+        "name": "HCBE",
+        "country": "Deutschland",
+        "city": "Frankfurt a.M.",
+        "travelrate": 24,
+        "travelpartrate": 12,
+        "link": "assets/img/hcbe.png"
+      },
+      "reason": {
+        "id": 2,
+        "reason": "Vor Ort Betreuung"
+      },
+      "id": 4
+    },
+    {
+      "start": "2019-08-12T07:00:10.000Z",
+      "end": "2019-08-19T07:00:10.000Z",
+      "customer": {
+        "id": 3,
+        "name": "Sirconic",
+        "country": "Deutschland",
+        "city": "Freilassing",
+        "travelrate": 24,
+        "travelpartrate": 12,
+        "link": "assets/img/sirconic.png"
+      },
+      "reason": {
+        "id": 1,
+        "reason": "Workshop"
+      },
+      "id": 5
+    },
+    {
+      "start": "2019-08-12T12:00:37.000Z",
+      "end": "2019-08-15T16:00:37.000Z",
+      "customer": {
+        "id": 1,
+        "name": "BANK-now",
+        "country": "Schweiz",
+        "city": "Horgen",
+        "travelrate": 62,
+        "travelpartrate": 32,
+        "link": "assets/img/bnow.png"
+      },
+      "reason": {
+        "id": 1,
+        "reason": "Workshop"
+      },
+      "costs": [
+        {
+          "date": "2019-08-14T22:00:00.000Z",
+          "type": "Auto",
+          "value": 7.5,
+          "currency": "Euro"
+        },
+        {
+          "date": "2019-08-12T22:00:00.000Z",
+          "type": "Auto",
+          "value": 8.5,
+          "currency": "Euro"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "start": "2019-09-15T12:00:44.000Z",
+      "end": "2019-09-25T16:30:44.000Z",
+      "customer": {
+        "id": 1,
+        "name": "BANK-now",
+        "country": "Schweiz",
+        "city": "Horgen",
+        "travelrate": 62,
+        "travelpartrate": 32,
+        "link": "assets/img/bnow.png"
+      },
+      "reason": {
+        "id": 1,
+        "reason": "Workshop"
+      },
+      "costs": [
+        {
+          "date": "2019-09-14T22:00:00.000Z",
+          "type": "Auto",
+          "value": 7.5,
+          "currency": "CHF"
+        },
+        {
+          "date": "2019-09-15T22:00:00.000Z",
+          "type": "Auto",
+          "value": 8,
+          "currency": "CHF"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "start": "2019-09-15T12:00:54.000Z",
+      "end": "2019-09-18T16:00:54.000Z",
+      "customer": {
+        "id": 1,
+        "name": "BANK-now",
+        "country": "Schweiz",
+        "city": "Horgen",
+        "travelrate": 62,
+        "travelpartrate": 32,
+        "link": "assets/img/bnow.png"
+      },
+      "reason": {
+        "id": 1,
+        "reason": "Workshop"
+      },
+      "costs": [
+        {
+          "date": "2019-09-15T22:00:00.000Z",
+          "type": "Auto",
+          "value": 8,
+          "currency": "CHF"
+        }
+      ],
+      "id": 8
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "BANK-now",
+      "country": "Schweiz",
+      "city": "Horgen",
+      "travelrate": 62,
+      "travelpartrate": 32,
+      "link": "assets/img/bnow.png"
+    },
+    {
+      "id": 2,
+      "name": "HCBE",
+      "country": "Deutschland",
+      "city": "Frankfurt a.M.",
+      "travelrate": 24,
+      "travelpartrate": 12,
+      "link": "assets/img/hcbe.png"
+    },
+    {
+      "id": 3,
+      "name": "Sirconic",
+      "country": "Deutschland",
+      "city": "Freilassing",
+      "travelrate": 24,
+      "travelpartrate": 12,
+      "link": "assets/img/sirconic.png"
+    },
+    {
+      "id": 4,
+      "name": "BMW A",
+      "country": "Österreich",
+      "city": "Salzburg",
+      "travelrate": 48,
+      "travelpartrate": 24,
+      "link": "assets/img/bmw.png"
+    },
+    {
+      "name": "Südleasing",
+      "city": "Stuttgart",
+      "country": "Deutschland",
+      "travelrate": "12",
+      "travelpartrate": "24",
+      "id": 5
+    },
+    {
+      "name": "3 Banken IT",
+      "city": "Innsbruck",
+      "country": "Österreich",
+      "travelrate": "12",
+      "travelpartrate": "24",
+      "id": 6
+    },
+    {
+      "name": "akf",
+      "city": "Wuppertal",
+      "country": "Deutschland",
+      "travelrate": "12",
+      "travelpartrate": "24",
+      "id": 7,
+      "link": "assets/img/akf.png"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<h2>Kundenübersicht</h2>
+<div *ngFor="let customer of customers"  (click)="selectCustomer(customer)">
+    <ul>
+      <li >
+          <span>{{customer.id}} {{customer.name}} {{customer.country}} {{customer.travelrate}} {{customer.travelpartrate}}</span>
+      </li>
+    </ul>
+  </div>
+  <button (click)="setNewCustomer()">Neuer Kunden</button>
+<div *ngIf="selectedCustomer">
+  <label>Name
+    <input [(ngModel)]="selectedCustomer.name"/>
+  </label>
+  <br>
+  <label>Ort
+    <input [(ngModel)]="selectedCustomer.city">
+  </label>
+  <br>
+  <label>Land
+    <input [(ngModel)]="selectedCustomer.country"/>
+  </label>
+  <br>
+  <label>Verpflegungspauschale
+    <input [(ngModel)]="selectedCustomer.travelrate"/>
+  </label>
+  <br>
+  <label>An-/Abreise
+    <input [(ngModel)]="selectedCustomer.travelpartrate"/>
+  </label>
+  <br>
+    <button (click)="saveCustomer" >Speichern</button>
+</div>
+<app-customer-add (ping)="insert($event)"></app-customer-add>

@@ -1,0 +1,36 @@
+<div *ngIf="!travels">
+    <p-progressSpinner></p-progressSpinner>
+</div>
+<div *ngIf="travels">
+  <h2>Die letzten Reisen</h2>
+  <p-table [columns]="cols" [value]="travels" [(contextMenuSelection)]="selectedTravel" [contextMenu]="cm" >
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th *ngFor="let col of columns">
+          {{col.header}}
+        </th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-travel>
+      <tr [pContextMenuRow]="travel">
+        <td><img class="imageList" src={{travel.customer.link}}></td>
+        <td>{{travel.start | date:'dd.MM.yyyy hh:mm'}}</td>
+        <td>{{travel.end | date:'dd.MM.yyyy hh:mm'}}</td>
+        <td>{{travel.customer.name}}</td>
+        <td>{{travel.reason.reason}}</td>
+        <td>
+          <div *ngFor="let cost of travel.costs">
+              {{cost.type}} {{cost.value}} {{cost.currency}}
+          </div>
+        </td>    
+        <td>{{travel.id}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+  <p-contextMenu #cm [model]="items"></p-contextMenu>
+  <br>
+  <div>
+    <p-button label="Neue Reise" icon="fas fa-plus" (onClick)="addTravel($event)"></p-button>
+  </div>
+</div>
+  

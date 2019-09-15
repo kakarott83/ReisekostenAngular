@@ -1,0 +1,23 @@
+<div>
+  <label>Name
+    <input [(ngModel)]="newCustomer.name"/>
+  </label>
+  <br>
+  <label>Ort
+    <input [(ngModel)]="newCustomer.city">
+  </label>
+  <br>
+  <label>Land
+    <input [(ngModel)]="newCustomer.country"/>
+  </label>
+  <br>
+  <label>Verpflegungspauschale
+    <input [(ngModel)]="newCustomer.travelrate"/>
+  </label>
+  <br>
+  <label>An-/Abreise
+    <input [(ngModel)]="newCustomer.travelpartrate"/>
+  </label>
+  <br>
+    <button (click)="insert(newCustomer)" >Anlegen</button>
+</div>

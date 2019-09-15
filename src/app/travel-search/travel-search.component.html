@@ -1,0 +1,15 @@
+<div id="search-component">
+  <h4><label for="search-box">Kundensuche</label></h4>
+ 
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+ 
+  <ul class="search-result">
+    <li *ngFor="let travel of travels$ | async" >
+      <a routerLink="/detail/{{travel.id}}">
+        {{travel.customer}}
+        {{travel.start}}
+        {{travel.ende}}
+      </a>
+    </li>
+  </ul>
+</div>
