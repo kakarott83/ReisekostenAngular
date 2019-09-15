@@ -30,7 +30,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
 
     this.cols = [
-      {field: 'image', header: 'Logo'},
+      {field: 'image', header: ''},
       {field: 'start', header: 'Start'},
       {field: 'end', header: 'Ende'},
       {field: 'customer', header: 'Kunde'},
